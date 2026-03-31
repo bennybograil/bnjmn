@@ -1,5 +1,5 @@
 console.log("get the fuck out of my dev tools you thief!!!")
 
-const res = await fetch("http://127.0.0.1:8000/")
+const res = await fetch("https://typically-laura-manufacturer-tone.trycloudflare.com")
 const data = await res.text()
 console.log(data)

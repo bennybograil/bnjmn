@@ -1,4 +1,16 @@
 console.log("get the fuck out of my dev tools you thief!!!")
 
-const backend = fetch(http://127.0.0.1:8000/)
-console.log(backend)
+async function getData() {
+  const url = "https://example.org/products.json";
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`Response status: ${response.status}`);
+    }
+
+    const result = await response.json();
+    console.log(result);
+  } catch (error) {
+    console.error(error.message);
+  }
+}
